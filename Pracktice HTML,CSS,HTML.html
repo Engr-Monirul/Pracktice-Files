@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="pid1">My Name Monirul!</p>
+        <p id="pid2" onmouseover="sizeText()">Monirul</p>
+    </body>
+    <style>
+        body
+        {
+            text-align:center;
+            color:red;
+        }
+    </style>
+    <script>
+        var x = document.getElementById("pid1");
+        x.innerHTML="I Love ALLAH";
+        x.style.color="blue";
+        mySelf();
+        function mySelf()
+        {
+            var myName = {Name:"MUHAMMAD Monirul Islam",Age:22,Gender:"Male"};
+            document.write("My Name Is "+myName.Name+". My Age Is "+myName.Age+" Years Old. I Am "+myName.Gender+".");
+        }
+        /*function sizeText()
+        {
+            document.getElementById("pid2").style.font.size="20px";
+        }*/
+        str = new String();
+        str = "We Are Ummah Of Hzrat Muhammad Sallallahu Alaihios Sallam";
+        document.write("</br>"+str);
+        strLen = str.length;
+        /*document.write(strLen);
+        for x in myName:
+        {
+            document.write(x);
+        }*/
+        str0=str.slice(16);
+        document.write("<br>String Slice: "+str0);
+        str1=str.substring(16,30);
+        document.write("<br>String Substring: "+str1);
+        str2=str.substr(31,26);
+        document.write("<br>String SubStr: "+str2);
+        let price = 10;
+        let VAT = 0.25;
+        document.getElementById("demo").innerHTML = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+    </script>
+</html>
